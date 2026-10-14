@@ -1,13 +1,13 @@
 [package]
 name = "gtk-rust-template"
 authors = ["Bilal Elmoussaoui <bil.elmoussaoui@gmail.com>"]
-edition = "2021"
+edition = "2024"
 
 [profile.release]
 lto = true
 
 [dependencies]
-gettext-rs = { version = "0.7", features = ["gettext-system"] }
-gtk = { version = "0.11", package = "gtk4", features = ["v4_14"] }
+gettext-rs = { version = "0.8", features = ["gettext-system"] }
+gtk = { version = "0.11.5", package = "gtk4", features = ["v4_14"] }
 tracing = "0.1.44"
 tracing-subscriber = "0.3"
