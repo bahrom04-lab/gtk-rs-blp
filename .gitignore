@@ -11,3 +11,4 @@
 /.vscode
 .direnv
 result
+*.po~
