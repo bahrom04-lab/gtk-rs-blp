@@ -25,6 +25,16 @@
 
         devShells.default = pkgs.mkShell {
           nativeBuildInputs = with pkgs; [
+            nixd
+            nixfmt
+            rustc
+            rustfmt
+            rust-analyzer
+            cargo
+            clippy
+            rustPlatform.bindgenHook
+            just
+            just-lsp
             appstream-glib
             desktop-file-utils
             meson
@@ -32,26 +42,15 @@
             pkg-config
             wrapGAppsHook4
             rustPlatform.cargoSetupHook
-            cargo
-            rustc
             rustPlatform.bindgenHook
           ];
 
           buildInputs = with pkgs; [
             gdk-pixbuf
             glib
-            gst_all_1.gstreamer
-            gst_all_1.gst-plugins-base
-            (gst_all_1.gst-plugins-bad.override { enableZbar = true; })
-            gst_all_1.gst-plugins-good
-            gst_all_1.gst-plugins-rs
             gtk4
             libadwaita
             openssl
-            pipewire
-            sqlite
-            wayland
-            zbar
           ];
         };
 
