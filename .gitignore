@@ -9,3 +9,5 @@
 /.flatpak/
 /vendor
 /.vscode
+.direnv
+result
