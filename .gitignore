@@ -13,3 +13,4 @@
 result
 *.po~
 *.mo
+/subprojects/blueprint-compiler

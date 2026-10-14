@@ -43,6 +43,7 @@
             wrapGAppsHook4
             rustPlatform.cargoSetupHook
             rustPlatform.bindgenHook
+            blueprint-compiler
           ];
 
           buildInputs = with pkgs; [
