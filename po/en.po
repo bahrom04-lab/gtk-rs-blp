@@ -1,0 +1,3 @@
+#: src/application.rs:129
+msgid "translator-credits"
+msgstr ""
